@@ -1,0 +1,29 @@
+{
+  "name": "nest-typescript-starter",
+  "version": "1.0.0",
+  "description": "Nest TypeScript starter repository",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "ts-node src/main",
+    "prestart:prod": "npm run build",
+    "start:prod": "node dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "6.0.5",
+    "@nestjs/core": "6.0.5",
+    "@nestjs/platform-express": "6.0.5",
+    "mysql2": "1.6.5",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.4.0",
+    "sequelize": "5.2.12",
+    "sequelize-typescript": "0.6.9",
+    "typescript": "3.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "10.14.4",
+    "@types/sequelize": "4.27.46",
+    "ts-node": "8.0.3",
+    "tslint": "5.15.0"
+  }
+}
